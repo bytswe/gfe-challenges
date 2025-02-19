@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- [Delete this comment] This file is the main file for the challenge. For the most part, you should be editing this file. -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hero Section | GreatFrontEnd Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
+      If you're not using Tailwind, you may delete the <script> -->
+    <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="icon" href="img/favicon.ico" sizes="any" />
+    <style>
+      /* You may write styles inside this <style> tag or within `css/style.css`. */
+    </style>
+  </head>
+  <body class="bg-gradient-to-tl from-slate-300 to-slate-50">
+    <!-- Add your site or application content here -->
+    <div id="container" class="grid grid-cols-1 justify-center m-5">
+      <div class="flex flex-col bg-white drop-shadow-md rounded">
+        <div id="content" class="flex flex-col p-4 sm:px-4 sm:py-16 xl:p-24">
+          <div
+            id="header"
+            class="flex flex-col w-full justify-center items-center gap-5"
+          >
+            <h1
+              class="font-semibold text-3xl sm:text-5xl text-neutral-900 text-center"
+            >
+              Frequently asked questions
+            </h1>
+            <p class="text-lg sm:text-xl text-neutral-600">
+              Choose any questions you need
+            </p>
+          </div>
+          <div id="qna-list" class="flex flex-col gap-7">
+            <button
+              type="button"
+              aria-expanded="true"
+              aria-controls="qna-1"
+              id="qna-1"
+              class="flex flex-col flex-wrap p-4 justify-start items-start rounded-xl"
+            >
+              <div id="question-1" class="flex flex-row w-full justify-between">
+                <h4
+                  id="question-header-1"
+                  class="font-medium text-lg text-neutral-900 text-start"
+                >
+                  What types of images are available on your platform?
+                </h4>
+                <div
+                  id="close-btn-1-div"
+                  class="flex flex-row"
+                  aria-hidden="true"
+                >
+                  <svg
+                    id="close-btn-1"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      id="close-btn-1"
+                      d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM7 11H17V13H7V11Z"
+                      fill="#A3A3A3"
+                    />
+                  </svg>
+                </div>
+                <div id="open-btn-1-div" class="hidden" aria-hidden="true">
+                  <svg
+                    id="open-btn-1"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      id="open-btn-1"
+                      d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                      fill="#A3A3A3"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <p id="answer-1" class="text-base text-neutral-600 text-start">
+                Our platform offers a diverse range of abstract images to suit
+                various preferences and needs. From vibrant geometric patterns
+                to soothing landscapes, we strive to provide a wide selection to
+                cater to different tastes.
+              </p>
+            </button>
+            <hr />
+            <button
+              type="button"
+              aria-expanded="true"
+              aria-controls="qna-2"
+              id="qna-2"
+              class="flex flex-col flex-wrap p-4 justify-start items-start rounded-xl"
+            >
+              <div id="question-2" class="flex flex-row w-full justify-between">
+                <h4
+                  id="question-header-2"
+                  class="font-medium text-lg text-neutral-900 text-start"
+                >
+                  How can I access and download images from your platform?
+                </h4>
+                <div
+                  id="close-btn-2-div"
+                  class="flex flex-row"
+                  aria-hidden="true"
+                >
+                  <svg
+                    id="close-btn-2"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      id="close-btn-2"
+                      d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM7 11H17V13H7V11Z"
+                      fill="#A3A3A3"
+                    />
+                  </svg>
+                </div>
+                <div id="open-btn-2-div" class="hidden" aria-hidden="true">
+                  <svg
+                    id="open-btn-2"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      id="open-btn-2"
+                      d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                      fill="#A3A3A3"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <p id="answer-2" class="text-base text-neutral-600 text-start">
+                Accessing and downloading images from our platform is simple.
+                Upon signing up and logging in, users can browse through our
+                curated collection and download their chosen images directly to
+                their devices with just a few clicks.
+              </p>
+            </button>
+            <hr />
+            <button
+              type="button"
+              aria-expanded="true"
+              aria-controls="qna-3"
+              id="qna-3"
+              class="flex flex-col flex-wrap p-4 justify-start items-start rounded-xl"
+            >
+              <div id="question-3" class="flex flex-row w-full justify-between">
+                <h4
+                  id="question-header-3"
+                  class="font-medium text-lg text-neutral-900 text-start"
+                >
+                  Do you offer free images, or is there a subscription required?
+                </h4>
+                <div
+                  id="close-btn-3-div"
+                  class="flex flex-row"
+                  aria-hidden="true"
+                >
+                  <svg
+                    id="close-btn-3"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      id="close-btn-3"
+                      d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM7 11H17V13H7V11Z"
+                      fill="#A3A3A3"
+                    />
+                  </svg>
+                </div>
+                <div id="open-btn-3-div" class="hidden" aria-hidden="true">
+                  <svg
+                    id="open-btn-3"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      id="open-btn-3"
+                      d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                      fill="#A3A3A3"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <p id="answer-3" class="text-base text-neutral-600 text-start">
+                We provide both free and premium images on our platform. Users
+                can explore a selection of free images without any subscription.
+                For access to our entire library and additional features, we
+                offer subscription plans tailored to different user needs.
+              </p>
+            </button>
+            <hr />
+            <button
+              type="button"
+              aria-expanded="true"
+              aria-controls="qna-4"
+              id="qna-4"
+              class="flex flex-col flex-wrap p-4 justify-start items-start rounded-xl"
+            >
+              <div id="question-4" class="flex flex-row w-full justify-between">
+                <h4
+                  id="question-header-4"
+                  class="font-medium text-lg text-neutral-900 text-start"
+                >
+                  What payment methods do you accept for subscriptions?
+                </h4>
+                <div
+                  id="close-btn-4-div"
+                  class="flex flex-row"
+                  aria-hidden="true"
+                >
+                  <svg
+                    id="close-btn-4"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      id="close-btn-4"
+                      d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM7 11H17V13H7V11Z"
+                      fill="#A3A3A3"
+                    />
+                  </svg>
+                </div>
+                <div id="open-btn-4-div" class="hidden" aria-hidden="true">
+                  <svg
+                    id="open-btn-4"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      id="open-btn-4"
+                      d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                      fill="#A3A3A3"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <p id="answer-4" class="text-base text-neutral-600 text-start">
+                We accept a variety of payment methods, including credit/debit
+                cards and online payment gateways, to make the subscription
+                process convenient for our users.
+              </p>
+            </button>
+            <hr />
+            <button
+              type="button"
+              aria-expanded="true"
+              aria-controls="qna-5"
+              id="qna-5"
+              class="flex flex-col flex-wrap p-4 justify-start items-start rounded-xl"
+            >
+              <div id="question-5" class="flex flex-row w-full justify-between">
+                <h4
+                  id="question-header-5"
+                  class="font-medium text-lg text-neutral-900 text-start"
+                >
+                  Can I cancel or modify my subscription at any time?
+                </h4>
+                <div
+                  id="close-btn-5-div"
+                  class="flex flex-row"
+                  aria-hidden="true"
+                >
+                  <svg
+                    id="close-btn-5"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      id="close-btn-5"
+                      d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM7 11H17V13H7V11Z"
+                      fill="#A3A3A3"
+                    />
+                  </svg>
+                </div>
+                <div id="open-btn-5-div" class="hidden" aria-hidden="true">
+                  <svg
+                    id="open-btn-5"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      id="open-btn-5"
+                      d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                      fill="#A3A3A3"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <p id="answer-5" class="text-base text-neutral-600 text-start">
+                Yes, absolutely. You have the flexibility to cancel or modify
+                your subscription at any time through your account settings.
+                Changes will take effect immediately, ensuring you have full
+                control over your subscription preferences.
+              </p>
+            </button>
+            <hr />
+            <button
+              type="button"
+              aria-expanded="true"
+              aria-controls="qna-6"
+              id="qna-6"
+              class="flex flex-col flex-wrap p-4 justify-start items-start rounded-xl"
+            >
+              <div id="question-6" class="flex flex-row w-full justify-between">
+                <h4
+                  id="question-header-6"
+                  class="font-medium text-lg text-neutral-900 text-start"
+                >
+                  How frequently do you update your image collection?
+                </h4>
+                <div
+                  id="close-btn-6-div"
+                  class="flex flex-row"
+                  aria-hidden="true"
+                >
+                  <svg
+                    id="close-btn-6"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      id="close-btn-6"
+                      d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM7 11H17V13H7V11Z"
+                      fill="#A3A3A3"
+                    />
+                  </svg>
+                </div>
+                <div id="open-btn-6-div" class="hidden" aria-hidden="true">
+                  <svg
+                    id="open-btn-6"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      id="close-btn-6"
+                      d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+                      fill="#A3A3A3"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <p id="answer-6" class="text-base text-neutral-600 text-start">
+                We regularly update our image collection with fresh and
+                captivating content to keep our users inspired and engaged. New
+                images are added consistently to ensure there's always something
+                new to discover on our platform.
+              </p>
+            </button>
+            <hr />
+            <div
+              class="flex flex-row flex-wrap p-8 gap-4 justify-between bg-white drop-shadow-md rounded-lg"
+            >
+              <div id="text-group" class="flex flex-col gap-2">
+                <h4 class="font-semibold text-xl text-neutral-900">
+                  Can't find the answer you're looking for?
+                </h4>
+                <p class="text-base text-neutral-600">
+                  Reach out to our
+                  <a
+                    href="#"
+                    class="text-base text-indigo-700 hover:text-indigo-800"
+                    >customer support</a
+                  >
+                  team.
+                </p>
+              </div>
+              <button
+                class="w-full md:w-fit px-5 py-3 bg-indigo-700 hover:bg-indigo-800 rounded font-medium text-white text-base"
+              >
+                Get in touch
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+    Frequently asked questions
+    Choose any questions you need
+    
+    What types of images are available on your platform?
+    Our platform offers a diverse range of abstract images to suit various preferences and needs. From vibrant geometric patterns to soothing landscapes, we strive to provide a wide selection to cater to different tastes.
+    
+    How can I access and download images from your platform?
+    Accessing and downloading images from our platform is simple. Upon signing up and logging in, users can browse through our curated collection and download their chosen images directly to their devices with just a few clicks.
+    
+    Do you offer free images, or is there a subscription required?
+    We provide both free and premium images on our platform. Users can explore a selection of free images without any subscription. For access to our entire library and additional features, we offer subscription plans tailored to different user needs.
+    
+    What payment methods do you accept for subscriptions?
+    We accept a variety of payment methods, including credit/debit cards and online payment gateways, to make the subscription process convenient for our users.
+    
+    Can I cancel or modify my subscription at any time?
+    Yes, absolutely. You have the flexibility to cancel or modify your subscription at any time through your account settings. Changes will take effect immediately, ensuring you have full control over your subscription preferences.
+    
+    How frequently do you update your image collection?
+    We regularly update our image collection with fresh and captivating content to keep our users inspired and engaged. New images are added consistently to ensure there's always something new to discover on our platform.
+    
+    Can’t find the answer you’re looking for?
+    Reach out to our customer support team.
+    
+    Get in touch 
+    -->
+
+    <!-- Attribute this challenge to yourself! -->
+    <div class="credits">
+      A challenge by
+      <a
+        href="https://www.greatfrontend.com/projects?ref=challenges"
+        target="_blank"
+        >GreatFrontEnd Projects</a
+      >. Built by
+      <a href="https://www.greatfrontend.com/u/bytswe" target="_blank">bytswe</a
+      >.
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
