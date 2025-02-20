@@ -69,7 +69,7 @@ export default function NewsletterSection() {
   return (
     <div id="container" className="grid grid-cols-1 justify-center m-5">
       <div className="flex flex-col bg-white drop-shadow-md rounded">
-        <div id="content" className="flex flex-col gap-12 sm:gap-16 px-4 py-4 md:px-4 md:py-16 xl:px-4 xl:py-24">
+        <div id="content" className="flex flex-col gap-12 sm:gap-16 px-4 py-4 md:px-4 md:py-16 xl:px-24 xl:py-24">
           {subscribeStatus.status === "success" ? (
             <div
               id="toaster-success"
