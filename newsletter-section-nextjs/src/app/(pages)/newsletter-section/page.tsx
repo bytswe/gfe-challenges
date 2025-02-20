@@ -69,7 +69,7 @@ export default function NewsletterSection() {
   return (
     <div id="container" className="grid grid-cols-1 justify-center m-5">
       <div className="flex flex-col bg-white drop-shadow-md rounded">
-        <div id="content" className="flex flex-col gap-12 sm:gap-16 px-4 py-12 sm:px-4 sm:py-16 xl:py-24">
+        <div id="content" className="flex flex-col gap-12 sm:gap-16 px-4 py-4 md:px-4 md:py-16 xl:px-4 xl:py-24">
           {subscribeStatus.status === "success" ? (
             <div
               id="toaster-success"
@@ -101,7 +101,7 @@ export default function NewsletterSection() {
             className="flex flex-col lg:flex-row h-fit px-8 gap-16 xl:gap-8 justify-center items-center">
             <section id="section-left" className="flex flex-1 flex-col gap-12">
               <hgroup className="flex flex-col gap-16">
-                <h1 className="font-semibold text-5xl text-neutral-900 text-start align-top">
+                <h1 className="font-semibold  text-3xl md:text-5xl text-neutral-900 text-start align-top">
                   Get the finest curated abstracts delivered weekly to your inbox
                 </h1>
                 <ul className="flex flex-col text-lg font-normal text-neutral-600 gap-y-5">
