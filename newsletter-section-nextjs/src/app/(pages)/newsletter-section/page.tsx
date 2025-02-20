@@ -1,8 +1,5 @@
 "use client"
-import { useEffect, useState } from "react"
-import NewsletterForm from "./components/newsletter-form"
-import Toaster from "./components/toaster"
-import { useFormResultContext } from "./context/form-result-provider"
+import { useState } from "react"
 
 export default function NewsletterSection() {
   const [subscribeStatus, setSubscribeStatus] = useState({
