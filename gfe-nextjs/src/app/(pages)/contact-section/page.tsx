@@ -108,7 +108,7 @@ export default function ContactSection() {
           )}
           <div
             id="section-container"
-            className="flex flex-col lg:flex-row h-fit px-8 gap-16 xl:gap-8 justify-center items-center">
+            className="flex flex-col lg:flex-row h-fit lg:px-8 gap-16 xl:gap-8 justify-center items-center">
             <section id="section-left" className="grid grid-cols-1 w-full lg:w-fit xl:w-[592px] gap-12">
               <hgroup className="flex flex-col gap-5">
                 <h1 className="font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-neutral-900 text-start align-top">
