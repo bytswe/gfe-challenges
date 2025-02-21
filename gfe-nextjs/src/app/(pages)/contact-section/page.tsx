@@ -115,7 +115,9 @@ export default function ContactSection() {
                   Talk to our team
                 </h1>
                 <p className="text-lg md:text-xl font-normal text-neutral-600">
-                  We're committed to delivering the support you require to make your experience as smooth as possible.
+                  {
+                    "We're committed to delivering the support you require to make your experience as smooth as possible."
+                  }
                 </p>
               </hgroup>
               <ul className="flex flex-col text-md md:text-lg lg:text-xl font-normal gap-y-6">
