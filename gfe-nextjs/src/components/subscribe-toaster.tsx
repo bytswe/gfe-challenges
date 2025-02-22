@@ -1,6 +1,5 @@
 "use client"
 import { useNewsletterSubscribeContext } from "@/app/(pages)/marketing-landing-page/page"
-import React, { useContext } from "react"
 
 function SubscribeToaster() {
   const [subscribeStatus] = useNewsletterSubscribeContext()
