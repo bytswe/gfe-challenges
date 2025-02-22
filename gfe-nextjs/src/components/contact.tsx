@@ -1,6 +1,6 @@
 "use client"
 
-import { contactFormErrorContext } from "@/app/(pages)/marketing-landing-page/page"
+import { useContactFormErrorContext } from "@/app/(pages)/marketing-landing-page/page"
 import { useContext, useRef, useState } from "react"
 
 export type RequiredFiled = {
@@ -9,7 +9,7 @@ export type RequiredFiled = {
   message: boolean
 }
 function Contact() {
-  const [sendMsgStatus, setSendMsgStatus] = useContext(contactFormErrorContext)
+  const [sendMsgStatus, setSendMsgStatus] = useContactFormErrorContext()
   const [validEmail, setValidEmail] = useState<boolean | null>(null)
   const [requiredField, setRequiredField] = useState<RequiredFiled>({
     name: true,

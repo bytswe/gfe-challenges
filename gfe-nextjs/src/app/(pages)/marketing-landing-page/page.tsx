@@ -11,14 +11,14 @@ import Navbar from "@/components/navbar"
 import Newsletter from "@/components/newsletter"
 import PricingTiers from "@/components/pricing-tiers"
 import SubscribeToaster from "@/components/subscribe-toaster"
-import React, { createContext, useState } from "react"
+import React, { createContext, useContext, useState } from "react"
 
-export const newsletterSubscribeContext = createContext<any>({
+const newsletterSubscribeContext = createContext<any>({
   status: "",
   message: ""
 })
 
-export const contactFormErrorContext = createContext<any>({
+const contactFormErrorContext = createContext<any>({
   status: "",
   message: ""
 })
@@ -59,6 +59,22 @@ function MarketingLanding() {
       </div>
     </>
   )
+}
+
+export const useNewsletterSubscribeContext = () => {
+  const context = useContext(newsletterSubscribeContext)
+  if (!context) {
+    throw new Error("newsletterSubscribeContext must be used within a newsletterSubscribeContext.Provider")
+  }
+  return context
+}
+
+export const useContactFormErrorContext = () => {
+  const context = useContext(contactFormErrorContext)
+  if (!context) {
+    throw new Error("contactFormErrorContext must be used within a contactFormErrorContext.Provider")
+  }
+  return context
 }
 
 export default MarketingLanding
