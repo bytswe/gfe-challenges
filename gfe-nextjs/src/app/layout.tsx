@@ -21,7 +21,7 @@ export default function RootLayout({
             GreatFrontEnd Projects
           </a>
           . Built by{" "}
-          <a href="https://www.greatfrontend.com/u/bytswe" target="_blank">
+          <a href="https://www.greatfrontend.com/projects/u/bytswe" target="_blank">
             {" "}
             bytswe
           </a>
