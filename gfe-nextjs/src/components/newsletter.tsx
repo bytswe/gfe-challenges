@@ -1,6 +1,6 @@
 "use client"
 import { useNewsletterSubscribeContext } from "@/app/(pages)/marketing-landing-page/page"
-import { useContext, useState } from "react"
+import { useState } from "react"
 
 function Newsletter() {
   const [setSubscribeStatus] = useNewsletterSubscribeContext()
