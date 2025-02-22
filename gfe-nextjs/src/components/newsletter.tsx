@@ -3,7 +3,7 @@ import { newsletterSubscribeContext } from "@/app/(pages)/marketing-landing-page
 import { useContext, useState } from "react"
 
 function Newsletter() {
-  const [subscribeStatus, setSubscribeStatus] = useContext(newsletterSubscribeContext)
+  const [setSubscribeStatus] = useContext(newsletterSubscribeContext)
   const [validEmail, setValidEmail] = useState<boolean | null>(null)
   const [requiredEmail, setRequiredEmail] = useState<boolean | null>(null)
 

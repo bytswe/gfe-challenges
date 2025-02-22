@@ -11,7 +11,7 @@ import Navbar from "@/components/navbar"
 import Newsletter from "@/components/newsletter"
 import PricingTiers from "@/components/pricing-tiers"
 import SubscribeToaster from "@/components/subscribe-toaster"
-import React, { createContext, useRef, useState } from "react"
+import React, { createContext, useState } from "react"
 
 export const newsletterSubscribeContext = createContext<any>({
   status: "",

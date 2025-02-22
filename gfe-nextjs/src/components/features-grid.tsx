@@ -24,8 +24,8 @@ function FeatuersGrid() {
             </span>
             <h4 className="font-semibold text-xl text-neutral-900 text-center mt-5 mb-2">Infinite Download</h4>
             <p className="font-normal text-base text-center text-neutral-600">
-              Once you subscribe to our plans, they're all yours. Download as many as you want and use them for work
-              presentations, wallpapers, and much more.
+              Once you subscribe to our plans, they&apos;re all yours. Download as many as you want and use them for
+              work presentations, wallpapers, and much more.
             </p>
           </div>
           <div className="flex flex-col justify-start items-center">
@@ -63,7 +63,7 @@ function FeatuersGrid() {
             </span>
             <h4 className="font-semibold text-xl text-neutral-900 text-center mt-5 mb-2">Cancel Anytime</h4>
             <p className="font-normal text-base text-center text-neutral-600">
-              Subscribe at your own pace, and cancel when you feel it's enough.
+              Subscribe at your own pace, and cancel when you feel it&apos;s enough.
             </p>
           </div>
           <div className="flex flex-col justify-center items-center">

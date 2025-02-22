@@ -350,14 +350,16 @@ function FrequentlyAskedQuestions() {
             </div>
             <p id="answer-6" className={`text-base text-neutral-600 text-start ${isQuestionOpen.q6 ? "" : "hidden"} `}>
               We regularly update our image collection with fresh and captivating content to keep our users inspired and
-              engaged. New images are added consistently to ensure there's always something new to discover on our
+              engaged. New images are added consistently to ensure there&apos;s always something new to discover on our
               platform.
             </p>
           </button>
           <hr />
           <div className="flex flex-row flex-wrap p-8 gap-4 justify-between bg-white drop-shadow-md rounded-lg">
             <div id="text-group" className="flex flex-col gap-2">
-              <h4 className="font-semibold text-xl text-neutral-900">Can't find the answer you're looking for?</h4>
+              <h4 className="font-semibold text-xl text-neutral-900">
+                Can&apos;t find the answer you&apos;re looking for?
+              </h4>
               <p className="text-base text-neutral-600">
                 Reach out to our{" "}
                 <a href="#" className="text-base text-indigo-700 hover:text-indigo-800">

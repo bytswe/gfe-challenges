@@ -13,7 +13,7 @@ function FeaturesSideImage({ imgPosition }: { imgPosition: "left" | "right" }) {
               Convenience and licensing that empowers
             </h2>
             <p className="flex font-normal text-lg text-center">
-              In a world where storytelling constantly evolves,don't let licensing and poor support hold you down.
+              In a world where storytelling constantly evolves,don&apos;t let licensing and poor support hold you down.
             </p>
           </section>
           <section id="section-bottom" className="flex flex-col xl:flex-row gap-x-8">
@@ -160,8 +160,8 @@ function FeaturesSideImage({ imgPosition }: { imgPosition: "left" | "right" }) {
                     Portrait or landscape
                   </h6>
                   <p className="font-normal text-base pl-14 text-neutral-600">
-                    Effortlessly adapt your images for any platform - whether it's a stunning wallpaper or captivating
-                    Instagram reels and stories.
+                    Effortlessly adapt your images for any platform - whether it&apos;s a stunning wallpaper or
+                    captivating Instagram reels and stories.
                   </p>
                 </li>
               </ul>
