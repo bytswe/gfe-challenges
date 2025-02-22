@@ -1,6 +1,8 @@
-import { useContactFormErrorContext } from "@/app/(pages)/marketing-landing-page/page"
+"use client"
+import { useContactFormErrorContext } from "@/context/contactFormErrorContext"
+
 function ContactFormToaster() {
-  const [sendMsgStatus] = useContactFormErrorContext()
+  const { sendMsgStatus } = useContactFormErrorContext()
   return (
     <>
       {sendMsgStatus.status === "error" ? (

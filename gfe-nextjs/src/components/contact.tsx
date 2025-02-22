@@ -1,6 +1,6 @@
 "use client"
 
-import { useContactFormErrorContext } from "@/app/(pages)/marketing-landing-page/page"
+import { useContactFormErrorContext } from "@/context/contactFormErrorContext"
 import { useRef, useState } from "react"
 
 export type RequiredFiled = {
@@ -9,7 +9,7 @@ export type RequiredFiled = {
   message: boolean
 }
 function Contact() {
-  const [sendMsgStatus, setSendMsgStatus] = useContactFormErrorContext()
+  const { sendMsgStatus, setSendMsgStatus } = useContactFormErrorContext()
   const [validEmail, setValidEmail] = useState<boolean | null>(null)
   const [requiredField, setRequiredField] = useState<RequiredFiled>({
     name: true,
@@ -35,11 +35,13 @@ function Contact() {
 
     if (Object.hasOwn(response, "message")) {
       setSendMsgStatus({ status: "success", message: response.message })
+      setTimeout(() => setSendMsgStatus({ status: "", message: "" }), 3000)
     } else if (Object.hasOwn(response, "error")) {
       setSendMsgStatus({
         status: "error",
         message: response.error
       })
+      setTimeout(() => setSendMsgStatus({ status: "", message: "" }), 3000)
     }
   }
 
@@ -240,8 +242,7 @@ function Contact() {
                             countMsgLength(e.target.value)
                           }}
                           onBlur={(e) => checkEmpty(e.target)}
-                          className={`w-full placeholder-neutral-500 ring-2 ${requiredField.message === false ? "ring-red-200 focus:outline-none focus:ring-red-600" : "ring-neutral-200 focus:outline-none focus:ring-indigo-500"} bg-neutral-50 px-3.5 py-3 rounded`}
-                          required></textarea>
+                          className={`w-full placeholder-neutral-500 ring-2 ${requiredField.message === false ? "ring-red-200 focus:outline-none focus:ring-red-600" : "ring-neutral-200 focus:outline-none focus:ring-indigo-500"} bg-neutral-50 px-3.5 py-3 rounded`}></textarea>
                         <div id="msg-bottom" className="flex flex-row w-full">
                           <span id="error-label" className=" text-base text-red-600 w-full">
                             {requiredField.message === false ? "Message is required." : ""}

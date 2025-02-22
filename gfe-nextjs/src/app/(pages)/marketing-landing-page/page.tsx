@@ -11,37 +11,14 @@ import Navbar from "@/components/navbar"
 import Newsletter from "@/components/newsletter"
 import PricingTiers from "@/components/pricing-tiers"
 import SubscribeToaster from "@/components/subscribe-toaster"
-import React, { createContext, useContext, useState } from "react"
 
-const newsletterSubscribeContext = createContext<any>({
-  status: "",
-  message: ""
-})
-
-const contactFormErrorContext = createContext<any>({
-  status: "",
-  message: ""
-})
 function MarketingLanding() {
-  const [subscribeStatus, setSubscribeStatus] = useState({
-    status: "",
-    message: ""
-  })
-  const [sendMsgStatus, setSendMsgStatus] = useState({
-    status: "",
-    message: ""
-  })
-
   return (
     <>
       <Navbar />
       <div id="container" className="grid grid-cols-1 justify-center m-5">
-        <newsletterSubscribeContext.Provider value={[subscribeStatus, setSubscribeStatus]}>
-          <SubscribeToaster />
-        </newsletterSubscribeContext.Provider>
-        <contactFormErrorContext.Provider value={[sendMsgStatus, setSendMsgStatus]}>
-          <ContactFormToaster />
-        </contactFormErrorContext.Provider>
+        <SubscribeToaster />
+        <ContactFormToaster />
         <HeroSectionSimple />
         <LogoMarquee />
         <FeatuersGrid />
@@ -49,32 +26,12 @@ function MarketingLanding() {
         <FeaturesSideImage imgPosition="left" />
         <PricingTiers />
         <FrequentlyAskedQuestions />
-        <newsletterSubscribeContext.Provider value={[setSubscribeStatus, setSubscribeStatus]}>
-          <Newsletter />
-        </newsletterSubscribeContext.Provider>
-        <contactFormErrorContext.Provider value={[sendMsgStatus, setSendMsgStatus]}>
-          <Contact />
-        </contactFormErrorContext.Provider>
+        <Newsletter />
+        <Contact />
         <Footer />
       </div>
     </>
   )
-}
-
-export const useNewsletterSubscribeContext = () => {
-  const context = useContext(newsletterSubscribeContext)
-  if (!context) {
-    throw new Error("newsletterSubscribeContext must be used within a newsletterSubscribeContext.Provider")
-  }
-  return context
-}
-
-export const useContactFormErrorContext = () => {
-  const context = useContext(contactFormErrorContext)
-  if (!context) {
-    throw new Error("contactFormErrorContext must be used within a contactFormErrorContext.Provider")
-  }
-  return context
 }
 
 export default MarketingLanding

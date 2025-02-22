@@ -1,9 +1,10 @@
 "use client"
-import { useNewsletterSubscribeContext } from "@/app/(pages)/marketing-landing-page/page"
+
+import { useNewsletterSubscribeContext } from "@/context/newsletterSubscribeContext"
 import { useState } from "react"
 
 function Newsletter() {
-  const [setSubscribeStatus] = useNewsletterSubscribeContext()
+  const { setSubscribeStatus } = useNewsletterSubscribeContext()
   const [validEmail, setValidEmail] = useState<boolean | null>(null)
   const [requiredEmail, setRequiredEmail] = useState<boolean | null>(null)
 
@@ -20,14 +21,15 @@ function Newsletter() {
       cache: "no-store"
     })
     const response = await subscribe.json()
-
     if (Object.hasOwn(response, "message")) {
       setSubscribeStatus({ status: "success", message: response.message })
+      setTimeout(() => setSubscribeStatus({ status: "", message: "" }), 3000)
     } else if (Object.hasOwn(response, "error")) {
       setSubscribeStatus({
         status: "error",
         message: response.error
       })
+      setTimeout(() => setSubscribeStatus({ status: "", message: "" }), 3000)
     }
   }
 
@@ -141,7 +143,6 @@ function Newsletter() {
                     onChange={(e) => checkValidEmail(e.target.value)}
                     onBlur={(e) => checkEmpty(e.target.value)}
                     className={`w-full placeholder-neutral-500 ring-2 ${requiredEmail === false ? "ring-red-200 focus:outline-red-600" : validEmail === false ? "ring-red-200 focus:outline-red-600" : "ring-neutral-200 focus:outline-indigo-500"} bg-neutral-50 px-3.5 py-2.5 rounded`}
-                    required
                   />
                   <span id="error-label" className=" text-base text-red-600 mt-[-0.625rem]">
                     {validEmail === false ? "Please enter a valid email address." : ""}
