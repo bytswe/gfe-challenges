@@ -13,14 +13,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`bg-gradient-to-tl from-slate-300 to-slate-50 antialiased`}>
-      {children}
+        {children}
         <div className="credits">
-          A challenge by
+          A challenge by{" "}
           <a href="https://www.greatfrontend.com/projects?ref=challenges" target="_blank">
+            {" "}
             GreatFrontEnd Projects
           </a>
-          . Built by
+          . Built by{" "}
           <a href="https://www.greatfrontend.com/u/bytswe" target="_blank">
+            {" "}
             bytswe
           </a>
           .
