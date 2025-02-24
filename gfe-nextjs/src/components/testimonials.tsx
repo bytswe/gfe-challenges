@@ -7,7 +7,7 @@ function Testimonials() {
         <h4 className="text-base font-semibold text-indigo-700">Testimonials</h4>
         <h2 className="text-3xl md:text-5xl font-semibold text-neutral-900">Countless users, countless smiles</h2>
         <p className="flex flex-wrap font-normal text-lg">
-          Explore our community's journey and discover why satisfaction defines us.
+          Explore our community&aposs journey and discover why satisfaction defines us.
         </p>
       </section>
       <section
@@ -23,8 +23,8 @@ function Testimonials() {
           </div>
           <blockquote id="testimonial-content">
             <p className="mt-3 text-base">
-              I've been searching for high-quality abstract images for my design projects, and I'm thrilled to have
-              found this platform. The variety and depth of creativity are astounding!
+              I&aposve been searching for high-quality abstract images for my design projects, and I&aposm thrilled to
+              have found this platform. The variety and depth of creativity are astounding!
             </p>
           </blockquote>
         </div>
@@ -105,7 +105,7 @@ function Testimonials() {
           <blockquote id="testimonial-content">
             <p className="mt-3 text-base">
               I appreciate how user-friendly the platform is. Browsing, downloading, and managing my image library
-              couldn't be easier.
+              couldn&apost be easier.
             </p>
           </blockquote>
         </div>
@@ -120,7 +120,7 @@ function Testimonials() {
           </div>
           <blockquote id="testimonial-content">
             <p className="mt-3 text-base">
-              I never thought I'd find such stunning abstract images for free! This platform has exceeded my
+              I never thought I&aposd find such stunning abstract images for free! This platform has exceeded my
               expectations in every way.
             </p>
           </blockquote>
@@ -136,8 +136,8 @@ function Testimonials() {
           </div>
           <blockquote id="testimonial-content">
             <p className="mt-3 text-base">
-              I'm amazed by the attention to detail in every image on this platform. It's clear that a lot of thought
-              and creativity goes into curating the collection.
+              I&aposm amazed by the attention to detail in every image on this platform. It&aposs clear that a lot of
+              thought and creativity goes into curating the collection.
             </p>
           </blockquote>
         </div>
