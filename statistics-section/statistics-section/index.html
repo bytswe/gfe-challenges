@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <!-- [Delete this comment] This file is the main file for the challenge. For the most part, you should be editing this file. -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hero Section | GreatFrontEnd Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
+      If you're not using Tailwind, you may delete the <script> -->
+    <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="icon" href="img/favicon.ico" sizes="any" />
+    <style>
+      /* You may write styles inside this <style> tag or within `css/style.css`. */
+    </style>
+  </head>
+  <body class="w-[1440px] flex flex-col justify-center items-center bg-gradient-to-b from-gray-50 to-[#d2d6db]">
+    <!-- Add your site or application content here -->
+    <div class="w-[1440px] h-[1024px] flex p-4">
+      <div class="flex flex-col justify-center self-stretch grow bg-white rounded-md">
+        <div id="content" class="flex flex-col items-center gap-16 self-stretch p-24">
+          <div class="flex flex-col items-center gap-16 self-stretch">
+            <hgroup class="flex flex-col gap-5 justify-center items-center">
+              <span class="font-semibold text-base text-center text-indigo-700">Statistic</span>
+              <h1 class="font-semibold text-5xl text-center text-neutral-900">More than premium abstract imagery</h1>
+              <p class="font-normal text-xl text-center text-neutral-600">
+                Our platform is more than just as a service to us – it is a catalyst for enriching lives through premium
+                abstract imagery.
+              </p>
+            </hgroup>
+          </div>
+          <div
+            id="section-container"
+            class="flex flex-col lg:flex-row h-fit lg:px-8 gap-16 xl:gap-8 justify-center items-center">
+            <section id="section-left" class="grid grid-cols-1 w-[77.5%]">
+              <img class="justify-center items-center w-[592px] h-[544px] object-cover" src="./img/white-blocks.png" />
+            </section>
+            <section id="section-right" class="grid grid-cols-1 w-full place-self-start">
+              <div id="statistic" class="w-[591px] flex flex-col gap-8">
+                <div>
+                  <p class="font-normal text-lg text-neutral-600">Our mission, in numbers</p>
+                </div>
+                <div class="flex flex-col gap-8 justify-center items-center">
+                  <div
+                    class="flex flex-col justify-center items-center self-stretch bg-white py-6 rounded-lg border border-solid border-neutral-200">
+                    <div class="flex flex-col justify-center items-center gap-4 self-stretch">
+                      <p class="font-bold text-5xl text-center text-indigo-700">25,664,890</p>
+                      <p class="font-normal text-xl text-center text-neutral-600">Downloads</p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-col justify-center items-center self-stretch bg-white py-6 rounded-lg border border-solid border-neutral-200">
+                    <div class="flex flex-col justify-center items-center gap-4 self-stretch">
+                      <p class="font-bold text-5xl text-center text-indigo-700">17,219</p>
+                      <p class="font-normal text-xl text-center text-neutral-600">Paid Users</p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-col justify-center items-center self-stretch bg-white py-6 rounded-lg border border-solid border-neutral-200">
+                    <div class="flex flex-col justify-center items-center gap-4 self-stretch">
+                      <p class="font-bold text-5xl text-center text-indigo-700">190,654,321</p>
+                      <p class="font-normal text-xl text-center text-neutral-600">Images in library</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Attribute this challenge to yourself! -->
+    <div class="credits">
+      A challenge by
+      <a href="https://www.greatfrontend.com/projects?ref=challenges" target="_blank">GreatFrontEnd Projects</a>. Built
+      by <a href="https://www.greatfrontend.com/u/bytswe" target="_blank">bytswe</a>.
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
