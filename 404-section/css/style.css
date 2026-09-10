@@ -1,5 +1,6 @@
 /* Put any custom CSS styles here.  */
 /* Be sure to delete the <style> tag in index.html if you want to use this stylesheet. */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 body {
   margin: 0;
   font-family:
@@ -127,7 +128,6 @@ body {
 
 .btn {
   height: 3rem;
-  padding: 12px 20px;
   border-radius: 4px;
 }
 
@@ -171,8 +171,8 @@ body {
   .page__content_header > h2 {
     gap: 1.25rem;
     line-height: 2.5rem;
-    font-size: var(--text-3xl);
-    font-weight: var(--font-medium);
+    font-size: var(--text-4xl);
+    font-weight: var(--font-semibold);
   }
 
   .page__content {
@@ -200,6 +200,7 @@ body {
 
   .btn {
     width: 100%;
+    padding: 12px 20px;
     font-size: var(--text-base);
   }
 }
@@ -238,13 +239,15 @@ body {
   .page-button {
     width: 100%;
     display: flex;
+    column-gap: 0.75rem;
     row-gap: 0.75rem;
   }
 
   .btn {
     margin-top: 0.5rem;
-    column-gap: 0.75rem;
     width: 10.81rem;
+    height: auto;
+    padding: 1.25rem 1.5rem;
     font-size: var(--text-lg);
   }
 }
@@ -295,6 +298,8 @@ body {
     margin-top: 0.5rem;
     column-gap: 0.75rem;
     width: 10.81rem;
+    height: auto;
+    padding: 1.25rem 1.5rem;
     font-size: var(--text-lg);
   }
 }
