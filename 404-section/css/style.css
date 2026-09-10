@@ -2,14 +2,301 @@
 /* Be sure to delete the <style> tag in index.html if you want to use this stylesheet. */
 body {
   margin: 0;
-  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+  font-family:
+    "Noto Sans",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
     sans-serif;
   min-height: 100vh;
+  background-image: url("../img/abstract-background.jpg");
+  background-size: cover;
 }
 
 * {
   box-sizing: border-box;
+}
+
+:root {
+  /* Break Points */
+  --breakpoint-mobile: 23.438rem;
+  --breakpoint-tablet: 48rem;
+  --breakpoint-desktop: 90rem;
+  --container-mobile: 100%;
+  --container-tablet: 100%;
+  --container-desktop: 80rem;
+  --gap-mobile: 1rem;
+  --gap-tablet: 1.5rem;
+  --gap-desktop: 2rem;
+  --cols-mobile: 4;
+  --cols-tablet: 6;
+  --cols-desktop: 12;
+  --padding-mobile: 1rem;
+  --padding-tablet: 2rem;
+  --padding-desktop: 2rem;
+
+  /* Typography */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+
+  /* Text Colors */
+  --color-text-primary: #171717;
+  --color-text-primary-hover: #0a0a0a;
+  --color-text-primary-invert: #fff;
+  --color-text-secondary: #525252;
+  --color-text-tertiart: #737373;
+  --color-text-brand: #4338ca;
+  --color-text-disabled: #a3a3a3;
+  --color-text-error: #dc2626;
+  --color-text-error-emphasize: #991b1b;
+  --color-text-success: #15803d;
+  --color-text-warning: #a16207;
+
+  /* Background Colors */
+  --color-background-primary: #fff;
+  --color-background-primary-inverted: #0a0a0a;
+  --color-background-primary-hover: #fafafa;
+  --color-background-secondary: #e5e7eb;
+  --color-background-secondary-hover: #d1d5db;
+  --color-background-tertiary: #fafafa;
+  --color-background-disabled: #f5f5f5;
+  --color-background-disabled-emphasize: #f3f4f6;
+  --color-background-brand-primary: #4338ca;
+  --color-background-brand-emphasize: #3730a3;
+  --color-background-error: #dc2626;
+  --color-background-error-emphasize: #b91c1c;
+  --color-background-error-subtle: #fef2f2;
+  --color-background-success-subtle: #f0fdf4;
+  --color-background-brand-subtle: #eef2ff;
+  --color-background-neutral-subtle: #f9fafb;
+  --color-background-warning-subtle: #fffbeb;
+
+  /* Line Colors */
+  --color-line-primary: #e5e5e5;
+  --color-line-secondary: #9ca3af;
+  --color-line-success: #bbf7d0;
+  --color-line-brand-solid: #4f46e5;
+  --color-line-brand-subtle: #c7d2fe;
+  --color-line-error-subtle: #fecaca;
+  --color-line-warning-subtle: #fde68a;
+
+  /* Icon Colors */
+  --color-icon-emphasize: #404040;
+  --color-icon-primary: #a3a3a3;
+  --color-icon-primary-hover: #737373;
+  --color-icon-brand: #6366f1;
+  --color-icon-brand-background: #eef2ff;
+  --color-icon-success: #15803d;
+  --color-icon-error: #dc2626;
+  --color-icon-warning: #facc15;
+
+  /* Form Element Colors */
+  --color-form-text-title: #404040;
+  --color-form-text-placeholder: #737373;
+  --color-form-text-hint: #737373;
+  --color-form-filled: #171717;
+  --color-form-disabled: #a3a3a3;
+  --color-form-error: #dc2626;
+  --color-form-background: #fafafa;
+  --color-form-border: #e5e5e5;
+}
+
+.container {
+  height: 100vh;
+  width: 100;
+  padding: 1rem;
+}
+
+.btn {
+  height: 3rem;
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background-color: var(--color-background-brand-primary);
+  border-color: var(--color-line-brand-solid);
+  color: var(--color-text-primary-invert);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-background-brand-emphasize);
+}
+
+.page__content_header > h2 {
+  display: flex;
+  color: var(--color-text-primary);
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.page__content_header_subtext {
+  color: var(--color-text-brand);
+}
+
+.page__content__description {
+  color: var(--color-text-secondary);
+}
+
+@media all {
+  .page-wrapper {
+    gap: 3rem;
+    padding: 3rem 0.75rem;
+    height: 100%;
+  }
+
+  .page__content_header > h2 {
+    gap: 1.25rem;
+    line-height: 2.5rem;
+    font-size: 2.25rem;
+    font-weight: var(--font-semibold);
+  }
+
+  .page__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .page__content_header_subtext {
+    font-size: var(--text-base);
+    font-weight: var(--font-semibold);
+    line-height: 3rem;
+  }
+
+  .page__content__description {
+    font-size: 1.25rem;
+    font-weight: var(--font-normal);
+  }
+
+  .page-button {
+    width: 100%;
+    display: flex;
+    row-gap: 0.75rem;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: var(--text-base);
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .page-wrapper {
+    gap: 3rem;
+    padding: 4rem 1rem;
+    height: 100%;
+  }
+
+  .page__content_header > h2 {
+    row-gap: 0.75rem;
+    line-height: 2.5rem;
+    font-size: var(--text-5xl);
+    font-weight: var(--font-semibold);
+  }
+
+  .page__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-tablet);
+  }
+
+  .page__content_header_subtext {
+    font-size: var(--text-base);
+    font-weight: var(--font-semibold);
+    line-height: 3rem;
+  }
+
+  .page__content__description {
+    font-size: var(--text-xl);
+    font-weight: var(--font-normal);
+  }
+
+  .page-button {
+    width: 100%;
+    display: flex;
+    row-gap: 0.75rem;
+  }
+
+  .btn {
+    margin-top: 0.5rem;
+    column-gap: 0.75rem;
+    width: 10.81rem;
+    font-size: var(--text-lg);
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .page-wrapper {
+    column-gap: 1.5rem;
+    padding: 6rem;
+    height: 100%;
+  }
+
+  ..page__content_header {
+    row-gap: 0.75rem;
+  }
+
+  .page__content_header > h2 {
+    row-gap: 0.75rem;
+    line-height: 2.5rem;
+    font-size: var(--text-6xl);
+    font-weight: var(--font-semibold);
+  }
+
+  .page__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-desktop);
+  }
+
+  .page__content_header_subtext {
+    padding-bottom: 0.25rem;
+    font-size: var(--text-base);
+    font-weight: var(--font-semibold);
+    line-height: 3rem;
+  }
+
+  .page__content__description {
+    font-size: var(--text-xl);
+    font-weight: var(--font-normal);
+  }
+
+  .page-button {
+    width: 100%;
+    display: flex;
+    row-gap: 0.75rem;
+  }
+
+  .btn {
+    margin-top: 0.5rem;
+    column-gap: 0.75rem;
+    width: 10.81rem;
+    font-size: var(--text-lg);
+  }
 }
 
 .credits {
