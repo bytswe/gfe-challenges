@@ -134,5 +134,7 @@ dist
 # Mac files
 .DS_Store
 
+.prettierrc
+
 # Prevent Figma files from being tracked by Git.
 *.fig
